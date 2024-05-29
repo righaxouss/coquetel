@@ -76,7 +76,6 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
         <i id="burguer" class="material-symbols-outlined"  onclick="clickMenu()">menu</i>
         <menu id="itens" >
 
-            <a class="pred" href="">🖕🏿</a>
             
            
             
@@ -160,9 +159,11 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
     function clickMenu() {
         if (itens.style.display == 'block'){
             itens.style.display = 'none'
+            alert('Você não tem acesso ao menu.');
         }
 
         else{
+            alert('Você não tem acesso ao menu.');
             itens.style.display = 'block'
         }
 
