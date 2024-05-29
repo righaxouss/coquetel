@@ -51,6 +51,7 @@ picture{
     }
 
     .pred{
+        font-size: 2em;
 font-weight: bolder;
 color: rgb(255, 255, 255);
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Times, serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -75,9 +76,8 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
         <i id="burguer" class="material-symbols-outlined"  onclick="clickMenu()">menu</i>
         <menu id="itens" >
 
-            <a class="pred" href="">T</a>
-            <a class="pred" href="">I</a>
-            <a class="pred" href="">D</a>
+            <a class="pred" href="">🖕🏿</a>
+            
            
             
         </menu>
@@ -100,29 +100,22 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
             
         </picture>
 <br>
-<br>
-<br>
-        <form action="">
-            <p>
-    
-                <label for="inome"></label>
-                <input type="text" name="nome" id="inome" required maxlength="5" autocomplete="name" >
-    
-            </p>
-        <br>
 
 
        
 
        
-        
-        
-            <p>
-                <a href=""><input class="enviar" type="submit" value="Send" ></a>
-                <a href=""><input class="enviar" type="reset" value="Clear" ></a>
-            </p>
             
+<form>
 
+    <h3>Nebuď hlúpy</h3>
+    <input type="text" placeholder="Používateľ" id="login">
+    <br>
+    <input type="password" placeholder="heslo" id="senha">
+    <br>
+    <input type="submit" value="Send" onclick="logar(); return false">
+
+</form>
 
 
 
@@ -131,14 +124,35 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 
 
 
-    <div class="transparent" >
-        <a id="transparentee" href="pag003.html"> <p id="transparente">TRANSPARENTE</p> </a>
-        
-        
-    </div>
+
    
    
    
+
+
+  
+
+
+    <script>
+
+
+        function logar(){
+
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+
+            if(login == "admin" && senha == "admin"){
+                alert('Sucesso');
+                location.href = "pag003.html";
+            }else{
+                alert('Usuario ou senha incorretos');
+            }
+
+        }
+
+    </script>
+
+
 
 
 
