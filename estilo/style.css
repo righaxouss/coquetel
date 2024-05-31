@@ -14,8 +14,8 @@ padding: 0px;
 
 
 body{
-    background-color: #0F0F0F;
-    color: white;
+    background: linear-gradient(to right, #181926 , #0D1117, #181926);
+    color: #E6EDF3;
    font-weight: bolder;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Times, serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
@@ -165,7 +165,8 @@ img{
 .midias1{
     
 padding: 20px;
-background-color: #0F0F0F;
+background: linear-gradient(to right, #181926 , #0D1117, #181926);
+                color: #E6EDF3;
 color: white;
 }
 
