@@ -98,7 +98,7 @@ menu{
     display: block;
    
 
-    background-color: #0F0F0F;
+    background: linear-gradient(to right, #181926 , #0D1117, #181926);
 display: none;
 
 }
